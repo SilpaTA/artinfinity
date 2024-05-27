@@ -1,4 +1,5 @@
 <?php
+
 class customfunction{
     function __construct(){
         add_action( 'init', array($this, 'wpb_custom_new_menu' ) );
@@ -9,7 +10,8 @@ class customfunction{
         add_action('pre_get_posts', array($this, 'restrict_dashboard_posts_to_author'));
         add_action('admin_init', array($this,'hide_user_profile_sections'));
         add_action('admin_head', array($this,'custom_admin_styles'));
-        add_action('init', array($this, 'custom_author_base') );
+        add_action( 'admin_bar_menu', array($this, 'custom_admin_bar_site_name'), 999 );
+        add_filter('login_redirect', array($this, 'admin_default_page') , 10, 3);
 
     }
 
@@ -121,21 +123,71 @@ class customfunction{
             #wp-admin-bar-comments,
             #wp-admin-bar-new-content,
             #screen-meta-links,#menu-posts,#menu-dashboard,#menu-media,#menu-pages,#menu-tools,#menu-comments,
-            #menu-posts-artists .wp-submenu li:nth-child(4) {
+            #menu-posts-artists .wp-submenu li:nth-child(4),
+            .form-table .user-email-wrap,
+            .form-table .user-url-wrap,
+            .form-table .user-twitter-wrap,
+            .form-table .user-facebook-wrap,
+            .form-table .user-additional_profile_urls-wrap,
+            #toplevel_page_wpcf7{
                 display: none !important;
             }
         </style>';
         }
     }
     
-    public function custom_author_base() {
-        global $wp_rewrite;
-        $wp_rewrite->author_base = 'artist'; // Replace 'profile' with your desired slug
+    // Function to replace site name with user name and URL in admin bar
+    public function custom_admin_bar_site_name( $wp_admin_bar ) {
+        if ( ! is_user_logged_in() ) {
+            return;
+        }
+
+        $current_user = wp_get_current_user();
+
+        // Build the URL to the user's profile page
+        // $profile_url = admin_url( 'profile.php' );
+        $profile_url = get_author_posts_url( $current_user->ID );
+
+        // Add the user's name and profile URL to the admin bar
+        $wp_admin_bar->add_node( array(
+            'id'    => 'site-name',
+            'title' => '<span class="ab-label">' . $current_user->display_name . '</span>',
+            'href'  => $profile_url,
+        ) );
     }
-   
+    public function admin_default_page($redirect_to, $request, $user) {
+        // If the user is not an administrator
+        if ( !current_user_can('administrator') && !is_wp_error($user) ) {
+            // Redirect non-admin users to the specified URL
+            $artworks_page_url = admin_url('edit.php?post_type=artworks');
+            return $artworks_page_url;
+        }
+        // Otherwise, redirect administrators to the default WordPress dashboard
+        return $redirect_to;
+    }
 
 }
 $customfunc = new customfunction;
+
+
+// Remove <p> tags from Contact Form 7 form output
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
+
+// function admin_default_page() {
+//     if ( !current_user_can('administrator')) {
+//         return 'http://localhost/artinfinity/wp-admin/edit.php?post_type=artworks';
+//     }
+//   }
+  
+//   add_filter('login_redirect', 'admin_default_page');
+
+
+
+
+
+
+
+
 
 
 

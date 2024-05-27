@@ -3844,12 +3844,12 @@ html:not(.lt-ie10) .not-animated {
 		visibility: visible;
 		transform: translate3d(-50%, 35px, 0);
 	}
-	.tabs-horizontal.tabs-corporate .nav-link.active .nav-link-main,
+	/* .tabs-horizontal.tabs-corporate .nav-link.active .nav-link-main,
 	.tabs-horizontal.tabs-corporate .nav-link:hover .nav-link-main {
 		transform: translate3d(0, 100%, 0);
 		opacity: 0;
 		visibility: hidden;
-	}
+	} */
 	[data-x-mode] .tabs-horizontal.tabs-corporate .nav-link-hover {
 		display: none;
 	}
@@ -6241,3 +6241,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /*rtl:end:ignore*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  	font-size:30px;
+	/* box-shadow: 2px 2px 3px #999; */
+  	z-index:100;
+}
+
+.my-float{
+	margin-top:15px;
+	font-size: 30px;
+}
