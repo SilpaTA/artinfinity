@@ -29,10 +29,4 @@
           <p>Loading...</p>
         </div>
       </div>
-      <!-- <a class="section section-banner d-none d-xl-flex" href="https://www.templatemonster.com/website-templates/monstroid2.html" 
-      style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/background-04-1920x60.jpg); 
-      background-image: -webkit-image-set( url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/background-04-1920x60.jpg) 1x, url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/background-04-3840x120.jpg) 2x )" target="_blank">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/foreground-04-1600x60.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/foreground-04-1600x60.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/foreground-04-3200x120.png 2x" 
-        alt="" width="1600" height="310">
-      </a> -->
-    
+

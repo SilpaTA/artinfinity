@@ -1,421 +1,140 @@
-<?php get_header(); ?>
-<section class="section section-xs">
-        <div class="container">
-          <!-- Bootstrap tabs-->
-          <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
-            <!-- Nav tabs-->
-            <ul class="nav nav-tabs">
-              <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab"><span class="nav-link-main">gallery</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab"><span class="nav-link-main">about me</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-toggle="tab"><span class="nav-link-main">services</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-4" data-toggle="tab"><span class="nav-link-main">contacts</span></a></li>
-            </ul>
-            <!-- Tab panes-->
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="tabs-1-1">
-                <div class="tabs-custom tabs-horizontal tabs-gallery hide-on-modal" id="tabs-galery">
-                  <!-- Nav tabs-->
-                  <ul class="nav nav-tabs">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-gallery-1" data-toggle="tab"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-01-180x180.jpg" alt="" width="180" height="180"/><span>Lifestyle</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-gallery-2" data-toggle="tab"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-02-180x180.jpg" alt="" width="180" height="180"/><span>Portrait</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-gallery-3" data-toggle="tab"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-03-180x180.jpg" alt="" width="180" height="180"/><span>Fashion</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-gallery-4" data-toggle="tab"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-04-180x180.jpg" alt="" width="180" height="180"/><span>Nature</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-gallery-5" data-toggle="tab"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-05-180x180.jpg" alt="" width="180" height="180"/><span>City Life</span></a></li>
-                  </ul>
-                  <!-- Tab panes-->
-                  <div class="tab-content">
-                    <div class="tab-pane fade" id="tabs-gallery-1">
-                      <div class="gallery-wrap">
-                        <div class="gallery-wrap-inner">
-                          <h4>Lifestyle</h4>
-                          <div class="dots-custom-lifestyle"></div><a class="back-to-gallery button-link button-link-icon" href="#"><span class="novi-icon icon icon-primary fa fa-angle-left"></span><span>back to gallery</span></a>
-                        </div>
-                        <div class="gallery-wrap-inner">
-                          <!-- Owl Carousel-->
-                          <div class="owl-carousel owl-gallery" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group" data-pagination-class=".dots-custom-lifestyle"><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-07-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-07-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-01-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-01-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-02-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-02-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-03-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-03-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-04-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-04-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-05-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-05-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-06-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-06-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-08-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-lifestyle-08-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--Portrait-->
-                    <div class="tab-pane fade" id="tabs-gallery-2">
-                      <div class="gallery-wrap">
-                        <div class="gallery-wrap-inner">
-                          <h4>Portrait</h4>
-                          <div class="dots-custom-portrait"></div><a class="back-to-gallery button-link button-link-icon" href="#"><span class="novi-icon icon icon-primary fa fa-angle-left"></span><span>back to gallery</span></a>
-                        </div>
-                        <div class="gallery-wrap-inner">
-                          <!-- Owl Carousel-->
-                          <div class="owl-carousel owl-gallery" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group" data-pagination-class=".dots-custom-portrait"><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-02-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-02-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-01-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-01-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-03-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-03-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-04-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-04-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-05-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-05-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-06-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-06-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-07-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-07-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-08-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-portrait-08-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--Fashion-->
-                    <div class="tab-pane fade" id="tabs-gallery-3">
-                      <div class="gallery-wrap">
-                        <div class="gallery-wrap-inner">
-                          <h4>Fashion</h4>
-                          <div class="dots-custom-fashion"></div><a class="back-to-gallery button-link button-link-icon" href="#"><span class="novi-icon icon icon-primary fa fa-angle-left"></span><span>back to gallery</span></a>
-                        </div>
-                        <div class="gallery-wrap-inner">
-                          <!-- Owl Carousel-->
-                          <div class="owl-carousel owl-gallery" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group" data-pagination-class=".dots-custom-fashion"><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-03-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="images/gallery-fashion-03-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-01-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-01-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-02-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-02-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-04-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-04-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-05-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-05-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-06-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-06-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-07-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-07-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-08-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-fashion-08-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--nature-->
-                    <div class="tab-pane fade" id="tabs-gallery-4">
-                      <div class="gallery-wrap">
-                        <div class="gallery-wrap-inner">
-                          <h4>Nature</h4>
-                          <div class="dots-custom-nature"></div><a class="back-to-gallery button-link button-link-icon" href="#"><span class="novi-icon icon icon-primary fa fa-angle-left"></span><span>back to gallery</span></a>
-                        </div>
-                        <div class="gallery-wrap-inner">
-                          <!-- Owl Carousel-->
-                          <div class="owl-carousel owl-gallery" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group" data-pagination-class=".dots-custom-nature">
-                            <a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-07-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-07-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-01-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-01-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-02-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-02-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-03-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-03-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-04-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-04-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-05-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-05-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-06-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-06-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-08-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-nature-08-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--city-->
-                    <div class="tab-pane fade" id="tabs-gallery-5">
-                      <div class="gallery-wrap">
-                        <div class="gallery-wrap-inner">
-                          <h4>Citylife</h4>
-                          <div class="dots-custom-city"></div><a class="back-to-gallery button-link button-link-icon" href="#"><span class="novi-icon icon icon-primary fa fa-angle-left"></span><span>back to gallery</span></a>
-                        </div>
-                        <div class="gallery-wrap-inner">
-                          <!-- Owl Carousel-->
-                          <div class="owl-carousel owl-gallery" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group" data-pagination-class=".dots-custom-city">
-                            <a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-02-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-02-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-01-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-01-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-03-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-03-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-04-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-04-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-05-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-05-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-06-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-06-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a><a class="gallery-item" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-07-970x524.jpg" data-lightgallery="item">
-                              <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gallery-city-07-970x524.jpg" alt="" width="970" height="524"/>
-                              </figure>
-                              <div class="caption"><span class="icon novi-icon fa-expand"></span></div></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="tabs-1-2">
-                <div class="content-box hide-on-modal">
-                  <div class="content-box-inner">
-                    <div class="row align-items-center row-30 row-md-30">
-                      <div class="col-12 col-md-6 col-lg-7">
-                        <figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/about-01-504x369.jpg" alt="" width="504" height="369"/>
-                        </figure>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-5">
-                        <h3>Who I Am</h3>
-                        <p class="subtitle">bermodi tempora incidunt ut labore et dolore magna maliquam</p>
-                        <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incidunt ut labore et dolore magnam. Naliquam quaerat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur.</p><a class="button button-primary button-icon button-icon-left" href="#" data-toggle="modal" data-target="#modal-about-us"><span>More</span><span class="novi-icon icon fa-angle-right"></span></a>
-                      </div>
-                    </div>
-                  </div><a class="close-content-box" href="#">x</a>
-                </div>
-                <div class="modal slideUp" id="modal-about-us" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="content-box">
-                        <div class="content-box-inner">
-                          <div class="row">
-                            <div class="col-12">
-                              <h3>A Few Words About Me</h3>
-                              <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae.</p>
-                              <p>Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempo. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea</p>
-                            </div>
-                          </div>
-                        </div><a class="close-modal-content-box" href="#" data-dismiss="modal">x</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="tabs-1-3">
-                <div class="content-box hide-on-modal">
-                  <div class="content-box-inner row-30">
-                    <h3>Services Overview</h3>
-                    <div class="row align-items-center row-30">
-                      <div class="col-12 col-md-6">
-                        <div class="unit service-box">
-                          <div class="unit-left"><span class="novi-icon icon icon-lg fa-clock-o"></span></div>
-                          <div class="unit-body"><a class="subtitle" href="#" data-toggle="modal" data-target="#modal-service-1">bermodi tempora incidunt ut labore et dolore magna maliquam</a>
-                            <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore et dolore magnam. Naliquam quae.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <div class="unit service-box">
-                          <div class="unit-left"><span class="novi-icon icon icon-lg fa-cloud"></span></div>
-                          <div class="unit-body"><a class="subtitle" href="#" data-toggle="modal" data-target="#modal-service-2">cidunt ut labore t dolore magna maliqua mquaerat voleneni.</a>
-                            <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore et dolore magnam. Naliquam quae.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <div class="unit service-box">
-                          <div class="unit-left"><span class="novi-icon icon icon-lg fa-bell"></span></div>
-                          <div class="unit-body"><a class="subtitle" href="#" data-toggle="modal" data-target="#modal-service-3">empora incidunt ut labore et dolore magna maliquam lroep oirta.</a>
-                            <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore et dolore magnam. Naliquam quae.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <div class="unit service-box">
-                          <div class="unit-left"><span class="novi-icon icon icon-lg fa-image"></span></div>
-                          <div class="unit-body"><a class="subtitle" href="#" data-toggle="modal" data-target="#modal-service-4">dunt ut labore et dolore magna aliquam lroep oirta lreo prota.</a>
-                            <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore et dolore magnam. Naliquam quae.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><a class="close-content-box" href="#">x</a>
-                </div>
-                <div class="modal slideUp" id="modal-service-1" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="content-box">
-                        <div class="content-box-inner">
-                          <div class="row">
-                            <div class="col-12">
-                              <h3>bermodi tempora incidunt ut labore et dolore magna maliquam</h3>
-                              <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae.</p>
-                              <p>Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempo. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea</p>
-                            </div>
-                          </div>
-                        </div><a class="close-modal-content-box" href="#" data-dismiss="modal">x</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal slideUp" id="modal-service-2" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="content-box">
-                        <div class="content-box-inner">
-                          <div class="row">
-                            <div class="col-12">
-                              <h3>cidunt ut labore t dolore magna maliqua mquaerat voleneni.</h3>
-                              <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae.</p>
-                              <p>Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempo. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea</p>
-                            </div>
-                          </div>
-                        </div><a class="close-modal-content-box" href="#" data-dismiss="modal">x</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal slideUp" id="modal-service-3" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="content-box">
-                        <div class="content-box-inner">
-                          <div class="row">
-                            <div class="col-12">
-                              <h3>empora incidunt ut labore et dolore magna maliquam lroep oirta.</h3>
-                              <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae.</p>
-                              <p>Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempo. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea</p>
-                            </div>
-                          </div>
-                        </div><a class="close-modal-content-box" href="#" data-dismiss="modal">x</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal slideUp" id="modal-service-4" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="content-box">
-                        <div class="content-box-inner">
-                          <div class="row">
-                            <div class="col-12">
-                              <h3>dunt ut labore et dolore magna aliquam lroep oirta lreo prota.</h3>
-                              <p>Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae.</p>
-                              <p>Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea commodi consequatur. Aquis autem vel eum iure reprehenderit, muytasas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempo. Asas dresasaser. Esse, quam nihil molestiae consequatur, vel illum. Dastqui dolorem ipsumquia dolsitmet conse tequam eius. Asmodi tempora incid. Dent ut labore t dolore magnam. Naliquam quae. Rat voleneni ullam corporis suscipit labasic ut aliquidea</p>
-                            </div>
-                          </div>
-                        </div><a class="close-modal-content-box" href="#" data-dismiss="modal">x</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="tabs-1-4">
-                <div class="content-box hide-on-modal">
-                  <div class="row row-30 justify-content-center align-items-center">
-                    <div class="col-12 col-md-7">
-                      <!--RD Mailform-->
-                      <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                        <div class="row row-14 gutters-14">
-                          <div class="col-sm-6">
-                            <div class="form-wrap">
-                              <label class="form-label" for="contact-name">Name</label>
-                              <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-wrap">
-                              <label class="form-label" for="contact-phone">Phone</label>
-                              <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Required @PhoneNumber">
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="form-wrap">
-                              <label class="form-label" for="contact-message">Message</label>
-                              <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-wrap">
-                              <label class="form-label" for="contact-email">E-Mail</label>
-                              <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
-                            </div>
-                          </div>
-                          <div class="col-sm-6 align-self-end">
-                            <div class="form-button">
-                              <button class="button button-lg button-block button-primary" type="submit">Send</button>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="col-12 col-md-4">
-                      <h3>Contact Info</h3>
-                      <address class="subtitle">8901 Marmora Road,<br> Glasgow, D04 89GR.</address>
-                      <ul class="contact-info">
-                        <li><span>Freephone:</span><a href="tel:#">+1 800 559 6580</a></li>
-                        <li><span>Telephone:</span><a href="tel:#">+1 800 603 6035</a></li>
-                        <li><span>FAX:</span><a href="tel:#">+1 800 889 9898</a></li>
-                        <li><span>E-mail:</span><a href="mailto:#">mail@demolink.org</a></li>
-                      </ul>
-                    </div>
-                  </div><a class="close-content-box" href="#">x</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section><a class="section section-banner d-xl-none" href="https://www.templatemonster.com/website-templates/monstroid2.html" 
-      style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, 
-      url(images/banner/background-03-3840x620.jpg) 2x )" target="_blank"><img src="images/banner/foreground-03-1600x310.png" 
-      srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a>
-<?php get_footer();
+<?php get_header('home'); ?>
+<main class="main">
+<?php 
+get_template_part( 'template-parts/artists/section', 'hero' ); 
 ?>
+<!-- ABOUT SECTION -->
+<section id="about" class="contact section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p>Color Pallette, an online haven for artists, art enthusiasts, and everyone who finds joy in the beauty of painted expressions.
+                 Our website is a collaborative space created by a diverse group of painting artists who are united by a shared passion for creativity and color. 
+                Here, we celebrate the myriad ways in which art can capture the essence of life, evoke emotions, and inspire change.
+    </p>
+  </div><!-- End Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center p-3 text-center" data-aos="fade-up" data-aos-delay="200">
+          <h3>Our Vision</h3>
+          <p>At Color Pallette, we envision a world where art is accessible to all, where creativity flourishes without boundaries, 
+                and where every artist has the opportunity to share their unique perspective. We believe that art has the power to connect people, 
+                transcend cultural barriers, and bring about a deeper understanding of the human experience.
+          </p>
+        </div>
+      </div><!-- End Info Item -->
+      <div class="col-lg-6 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center p-3 text-center" data-aos="fade-up" data-aos-delay="300">
+          <h3>Our Mission</h3>
+          <p>Our mission is to provide a platform where artists can showcase their work, engage with a supportive community, and grow their creative practice. 
+                We aim to foster an inclusive environment that encourages artistic exploration and innovation, 
+                offering resources and inspiration for both emerging and established artists.
+          </p>
+        </div>
+      </div><!-- End Info Item -->
+    </div>
+  </div>
+</section><!-- /Aboutn -->
+<!--WHAT WE OFFER-->
+<section id="we-offer" class="buy-tickets section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>What We Offer</h2>
+    <p>Experience the magic of perfectly harmonized colors, meticulously crafted to enhance your art and elevate your work to new heights. 
+      Let us be your trusted partner in your creative journey, offering the tools you need to make your masterpieces truly shine.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4 pricing-item p-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <h3>Artist Galleries<br></h3>
+      </div>
+      <div class="col-lg-8 d-flex align-items-center justify-content-center">
+        <p>Explore the diverse portfolios of our member artists, featuring a wide range of styles, 
+              techniques, and mediums. Each gallery provides insight into the artist's journey and creative process.
+        </p>
+      </div>
+    </div><!-- End Pricing Item -->
+
+    <div class="row gy-4 pricing-item featured mt-4 p-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-8 d-flex align-items-center justify-content-center">
+        <p>Join conversations with fellow artists and art lovers. Share tips, seek advice, and discuss the latest trends and challenges in the art world.</p>
+      </div>
+      <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <h3>Community Forums</h3>
+      </div>
+    </div><!-- End Pricing Item -->
+
+    <div class="row gy-4 pricing-item mt-4 p-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <h3>Workshops and Tutorials</h3>
+      </div>
+      <div class="col-lg-8 d-flex align-items-center justify-content-center">
+        <p>Enhance your skills with our curated selection of workshops and tutorials, led by experienced artists. 
+              Whether you're a beginner or a seasoned painter, there's always something new to learn.
+        </p>
+      </div>
+    </div><!-- End Pricing Item -->
+    <div class="row gy-4 pricing-item featured mt-4 p-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-8 d-flex align-items-center justify-content-center">
+        <p>Find recommendations for the best art supplies and read reviews from artists who have tested them. 
+            Make informed decisions about the materials that will bring your vision to life.
+        </p>
+      </div>
+      <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <h3>Art Supplies and Reviews</h3>
+      </div>
+    </div><!-- End Pricing Item -->
+    <div class="row gy-4 pricing-item mt-4 p-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <h3>Events and Exhibitions</h3>
+      </div>
+      <div class="col-lg-8 d-flex align-items-center justify-content-center">
+        <p>Stay up-to-date with upcoming art events, exhibitions, and competitions. Participate in community challenges and showcase your work to a broader audience.</p>
+      </div>
+    </div><!-- End Pricing Item -->
+  </div>
+</section><!-- /WHAT we offer -->
+<!--ARTISTS-->
+
+<section id="categories" class="sponsors section">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Featured Categories</h2>
+  <p>Explore the diverse range of artistic expressions and mediums showcased by our talented artists.</p>
+</div><!-- End Section Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row g-0 clients-wrap">
+  <?php
+$terms = get_terms(array(
+  'taxonomy' => 'type-of-work',
+  'hide_empty' => false,
+));
+foreach ($terms as $term) { 
+  $term_img = get_field('category_image', $term);
+  if ($term_img) { ?>
+    <div class="col-xl-3 col-md-4 client-logo text-center">
+      <img src="<?php echo $term_img['url']; ?>" class="img-fluid" alt="<?php echo $term->name; ?>">
+      <div class="group-name pb-3">
+        <h3><?php echo $term->name; ?></h3>
+      </div>
+    </div><!-- End Client Item -->
+  <?php } else { ?>
+    <div class="col-xl-3 col-md-4 client-logo text-center">
+      <div class="group-name pb-3">
+        <h3><?php echo $term->name; ?></h3>
+      </div>
+    </div><!-- End Client Item -->
+  <?php }
+}
+?>
+
+  </div>
+</div>
+</section><!-- /Sponsors Section -->
+</main> 
+<?php get_footer('home');?>

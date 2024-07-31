@@ -6260,3 +6260,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	margin-top:15px;
 	font-size: 30px;
 }
+.lg-toolbar #lg-share,
+.lg-toolbar #lg-download{
+	display: none !important;
+}
+img {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#wp-admin-bar-comments,
+#wp-admin-bar-wp-logo,
+#wp-admin-bar-new-content,
+#wp-admin-bar-wpseo-menu{
+    display:none !important;
+}

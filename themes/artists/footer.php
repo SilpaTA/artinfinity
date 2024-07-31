@@ -11,8 +11,8 @@
               <li><a class="novi-icon icon-xxs fa-pinterest-p icon" href="#"></a></li> -->
             </ul> 
             <!-- Rights-->
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>.&nbsp;</span>
-            <a href="#" data-toggle="modal" data-target="#privacy">Privacy Policy</a> 
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Color Palette. All Rights Reserved</span>
+            <!--<a href="#" data-toggle="modal" data-target="#privacy">Privacy Policy</a> -->
             <!-- Design&nbsp;by&nbsp; -->
             <!-- <a href="https://www.templatemonster.com/">Templatemonster</a>-->
           </p> 

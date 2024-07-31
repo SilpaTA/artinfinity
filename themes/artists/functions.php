@@ -12,6 +12,8 @@ class customfunction{
         add_action('admin_head', array($this,'custom_admin_styles'));
         add_action( 'admin_bar_menu', array($this, 'custom_admin_bar_site_name'), 999 );
         add_filter('login_redirect', array($this, 'admin_default_page') , 10, 3);
+        add_action('init',  array($this, 'change_author_base') );
+        add_action('wp_footer', array($this, 'disable_right_click'));
 
     }
 
@@ -52,18 +54,38 @@ class customfunction{
     // Style enqueue
 
     public function themes_styles() {
-        wp_enqueue_style( 'customfont', 'https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,700' );
-        wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css' );
-        wp_enqueue_style( 'font-style', get_stylesheet_directory_uri() . '/assets/css/fonts.css' );
-        wp_enqueue_style( 'style_css0', get_stylesheet_directory_uri() . '/assets/css/style.css' );
+         if (is_front_page() || (!is_author() && !is_single())) {
+            wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', 
+            array(), null);
+            wp_enqueue_style('bootstrapmin-home', get_template_directory_uri() . '/assets/home/vendor/bootstrap/css/bootstrap.min.css');
+            wp_enqueue_style('bootstrapicons-home', get_template_directory_uri() . '/assets/home/vendor/bootstrap-icons/bootstrap-icons.css');
+            wp_enqueue_style('aos-home', get_template_directory_uri() . '/assets/home/vendor/aos/aos.css');
+            wp_enqueue_style('lightbox-home', get_template_directory_uri() . '/assets/home/vendor/glightbox/css/glightbox.min.css');
+            wp_enqueue_style('swiper-home', get_template_directory_uri() . '/assets/home/vendor/swiper/swiper-bundle.min.css');
+            wp_enqueue_style('main-home', get_template_directory_uri() . '/assets/home/css/main.css');
+        }else{
+            wp_enqueue_style( 'customfont', 'https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,700' );
+            wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css' );
+            wp_enqueue_style( 'font-style', get_stylesheet_directory_uri() . '/assets/css/fonts.css' );
+            wp_enqueue_style( 'style_css0', get_stylesheet_directory_uri() . '/assets/css/style.css' );
+        }
     }
     
 
     //  Script Enqueue  
 
     public function themes_js() {
-    	wp_enqueue_script( 'core-js', get_stylesheet_directory_uri() . '/assets/js/core.min.js', '', '', true );
-    	wp_enqueue_script( 'script-js', get_stylesheet_directory_uri() . '/assets/js/script.js', '', '', true );
+         if (is_front_page() || (!is_author() && !is_single())) {
+            wp_enqueue_script( 'bundle-js-home', get_stylesheet_directory_uri() . '/assets/home/vendor/bootstrap/js/bootstrap.bundle.min.js', '', '', true );
+            wp_enqueue_script( 'aos-js-home', get_stylesheet_directory_uri() . '/assets/home/vendor/aos/aos.js', '', '', true );
+            wp_enqueue_script( 'lightbox-js-home', get_stylesheet_directory_uri() . '/assets/home/vendor/glightbox/js/glightbox.min.js', '', '', true );
+            wp_enqueue_script( 'swiper-js-home', get_stylesheet_directory_uri() . '/assets/home/vendor/swiper/swiper-bundle.min.js', '', '', true );
+            wp_enqueue_script( 'main-js-home', get_stylesheet_directory_uri() . '/assets/home/js/main.js', '', '', true );
+        }
+        else{
+            wp_enqueue_script( 'core-js', get_stylesheet_directory_uri() . '/assets/js/core.min.js', '', '', true );
+            wp_enqueue_script( 'script-js', get_stylesheet_directory_uri() . '/assets/js/script.js', '', '', true );
+        }
     }
 
     //Restrict post
@@ -103,8 +125,12 @@ class customfunction{
                     #your-profile h2:nth-of-type(4),
                     #your-profile .user-description-wrap,
                     #your-profile .user-profile-picture,
-                    #your-profile #application-passwords-section{
-                        display: none;
+                    #your-profile #application-passwords-section,
+                    #wp-admin-bar-comments,
+                    #wp-admin-bar-view-site,
+                    #wp-admin-bar-new-content,
+                    #wp-admin-bar-wp-logo{
+                        display: none !important;
                     }
                     .
                 </style>';
@@ -129,7 +155,21 @@ class customfunction{
             .form-table .user-twitter-wrap,
             .form-table .user-facebook-wrap,
             .form-table .user-additional_profile_urls-wrap,
-            #toplevel_page_wpcf7{
+            #toplevel_page_wpcf7,
+            #toplevel_page_wpseo_workouts,
+            #wp-admin-bar-wpseo-menu,
+            .user-instagram-wrap,
+            .user-linkedin-wrap,
+            .user-myspace-wrap,
+            .user-pinterest-wrap,
+            .user-soundcloud-wrap,
+            .user-tumblr-wrap,
+            .user-wikipedia-wrap,
+            .user-twitter-wrap,
+            .user-youtube-wrap,
+            #wp-admin-bar-view-site,
+            #wp-admin-bar-new-content,
+            #wp-admin-bar-wp-logo{
                 display: none !important;
             }
         </style>';
@@ -166,20 +206,35 @@ class customfunction{
         return $redirect_to;
     }
 
+    public function change_author_base() {
+        global $wp_rewrite;
+        $wp_rewrite->author_base = 'artist'; // Change 'new-author-slug' to whatever you want the base slug to be
+        $wp_rewrite->flush_rules();
+    }
+    public function disable_right_click() {
+        echo '
+        <script type="text/javascript">
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+        </script>
+    ';
+    }
+
 }
 $customfunc = new customfunction;
+
+
 
 
 // Remove <p> tags from Contact Form 7 form output
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
-// function admin_default_page() {
-//     if ( !current_user_can('administrator')) {
-//         return 'http://localhost/artinfinity/wp-admin/edit.php?post_type=artworks';
-//     }
-//   }
-  
-//   add_filter('login_redirect', 'admin_default_page');
+
+
+
+
+
 
 
 
